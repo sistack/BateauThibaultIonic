@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Nos bateaux partenaires</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <div>
+    <button ion-item *ngFor="let bateau of bateauxList" (click)="onLoadBateau(bateau)" id="boatContainer">
+      {{ bateau.name }}
+    </button>
+  </div>
+</ion-content>

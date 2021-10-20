@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
+
 export class HomePage {
 
   constructor(private router : Router) {}
@@ -15,7 +17,7 @@ export class HomePage {
   }
   //Vue2 : Bateaux
   onGoToBateaux(){
-    this.router.navigate(['/vue2Bateaux']);
+    this.router.navigate(['/vue2']);
   }
   //onGoTo Vue3 : Restaurants
   onGoToRestaurants(){
