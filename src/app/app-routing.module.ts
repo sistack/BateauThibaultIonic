@@ -22,7 +22,15 @@ const routes: Routes = [
   {
     path: 'vue4-x',
     loadChildren: () => import('./vue4-x/vue4-x.module').then( m => m.Vue4XPageModule)
+  },  {
+    path: 'vue2',
+    loadChildren: () => import('./vue2/vue2.module').then( m => m.Vue2PageModule)
   },
+  {
+    path: 'vue2-x',
+    loadChildren: () => import('./vue2-x/vue2-x.module').then( m => m.Vue2XPageModule)
+  },
+
 ];
 
 @NgModule({
