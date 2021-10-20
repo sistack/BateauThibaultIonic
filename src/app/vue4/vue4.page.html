@@ -1,30 +1,11 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Vue4</ion-title>
+    <ion-title>vue4</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-    <ion-list>
-      <ion-item>
-        <ion-label>
-          <button ion-item *ngFor="let recette of recettesList" (click)="onLoadRecettes(recette)">
-            {{recette.name}}
-          </button>
-        </ion-label>
-        </ion-item>
-    </ion-list>
-    <app-settings></app-settings>
+<ion-content>
+  <button ion-item *ngFor="let recette of recettesList" (click)="onLoadRecette(recette)">
+    {{recette.name}}
+  </button>
 </ion-content>
-
-<ion-footer padding>
-  <p>
-    Bas de page
-  </p>
-</ion-footer>
-
-<!-- Vue 4
-  page des idées de recette. 
-  Technique: 6 boutons; 
-  Fonctionnelle: au clique, redirection vers la vue appropriée, cf. wireframe en annexe.
--->

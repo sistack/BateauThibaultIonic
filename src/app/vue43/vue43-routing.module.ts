@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { Vue4XPage } from './vue4-x.page';
+import { Vue43Page } from './vue43.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: Vue4XPage
+    component: Vue43Page
   }
 ];
 
@@ -14,4 +14,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class Vue4XPageRoutingModule {}
+export class Vue43PageRoutingModule {}

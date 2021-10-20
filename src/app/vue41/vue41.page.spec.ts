@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { Vue4XPage } from './vue4-x.page';
+import { Vue41Page } from './vue41.page';
 
-describe('Vue4XPage', () => {
-  let component: Vue4XPage;
-  let fixture: ComponentFixture<Vue4XPage>;
+describe('Vue41Page', () => {
+  let component: Vue41Page;
+  let fixture: ComponentFixture<Vue41Page>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ Vue4XPage ],
+      declarations: [ Vue41Page ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(Vue4XPage);
+    fixture = TestBed.createComponent(Vue41Page);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));
