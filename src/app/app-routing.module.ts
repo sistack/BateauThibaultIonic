@@ -11,6 +11,18 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'vue4',
+    loadChildren: () => import('./vue4/vue4.module').then( m => m.Vue4PageModule)
+  },
+  {
+    path: 'vue4-x',
+    loadChildren: () => import('./vue4-x/vue4-x.module').then( m => m.Vue4XPageModule)
+  },
+  {
+    path: 'vue4-x',
+    loadChildren: () => import('./vue4-x/vue4-x.module').then( m => m.Vue4XPageModule)
+  },
 ];
 
 @NgModule({

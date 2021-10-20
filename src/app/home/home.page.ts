@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -7,6 +7,28 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(private router : Router) {}
+
+  //Vue1 : Contact
+  onGoToContact(){
+    this.router.navigate(['/vue1Contact']);
+  }
+  //Vue2 : Bateaux
+  onGoToBateaux(){
+    this.router.navigate(['/vue2Bateaux']);
+  }
+  //onGoTo Vue3 : Restaurants
+  onGoToRestaurants(){
+    this.router.navigate(['/vue3Restaurants']);
+  }
+  //onGoTo Vue4 : Recettes
+  onGoToRecettes(){
+    this.router.navigate(['/vue4']);
+  }
+  //onGoTo Vue5 : Produits
+  onGoToProduits(){
+    this.router.navigate(['/vue5Produits']);
+  }
+
 
 }
