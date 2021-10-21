@@ -13,6 +13,18 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
+    path: 'vue1',
+    loadChildren: () => import('./vue1/vue1.module').then( m => m.Vue1PageModule)
+  },
+  {
+    path: 'vue2',
+    loadChildren: () => import('./vue2/vue2.module').then( m => m.Vue2PageModule)
+  },
+  {
+    path: 'vue2-x',
+    loadChildren: () => import('./vue2-x/vue2-x.module').then( m => m.Vue2XPageModule)
+  },
+  {
     path: 'vue4',
     loadChildren: () => import('./vue4/vue4.module').then( m => m.Vue4PageModule)
   },
@@ -29,6 +41,7 @@ const routes: Routes = [
     path: 'vue5x',
     loadChildren: () => import('./vue5x/vue5x.module').then( m => m.Vue5xPageModule)
   },
+
 ];
 
 @NgModule({
