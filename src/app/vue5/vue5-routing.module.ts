@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { Vue42Page } from './vue42.page';
+import { Vue5Page } from './vue5.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: Vue42Page
+    component: Vue5Page
   }
 ];
 
@@ -14,4 +14,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class Vue42PageRoutingModule {}
+export class Vue5PageRoutingModule {}

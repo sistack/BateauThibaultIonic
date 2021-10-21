@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { Vue40PageRoutingModule } from './vue40-routing.module';
+import { Vue5xPageRoutingModule } from './vue5x-routing.module';
 
-import { Vue40Page } from './vue40.page';
+import { Vue5xPage } from './vue5x.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    Vue40PageRoutingModule
+    Vue5xPageRoutingModule
   ],
-  declarations: [Vue40Page]
+  declarations: [Vue5xPage]
 })
-export class Vue40PageModule {}
+export class Vue5xPageModule {}

@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { Vue40Page } from './vue40.page';
+import { Vue5Page } from './vue5.page';
 
-describe('Vue40Page', () => {
-  let component: Vue40Page;
-  let fixture: ComponentFixture<Vue40Page>;
+describe('Vue5Page', () => {
+  let component: Vue5Page;
+  let fixture: ComponentFixture<Vue5Page>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ Vue40Page ],
+      declarations: [ Vue5Page ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(Vue40Page);
+    fixture = TestBed.createComponent(Vue5Page);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));
