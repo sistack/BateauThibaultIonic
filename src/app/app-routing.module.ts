@@ -21,6 +21,14 @@ const routes: Routes = [
     path: 'vue4x',
     loadChildren: () => import('./vue4x/vue4x.module').then( m => m.Vue4xPageModule)
   },
+  {
+    path: 'vue5',
+    loadChildren: () => import('./vue5/vue5.module').then( m => m.Vue5PageModule)
+  },
+  {
+    path: 'vue5x',
+    loadChildren: () => import('./vue5x/vue5x.module').then( m => m.Vue5xPageModule)
+  },
 ];
 
 @NgModule({
