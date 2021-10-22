@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <ion-header>
   <ion-toolbar>
       <div class="container">
@@ -32,3 +33,95 @@
   </ion-list>
   
 </ion-content>
+=======
+<!--<ion-header>
+  <ion-toolbar>
+    <ion-title>Liste des Produits</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label>
+        <button ion-item *ngFor="let produit of data" (click)="onLoadProduits(produit)">
+          {{produit.name}}
+        </button>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  <app-settings></app-settings>
+</ion-content>
+
+<ion-footer padding>
+  <p>
+  footer
+  </p>
+</ion-footer>-->
+<!--faire une page principale
+et redirection vers les pages avec les boutons-->
+
+<ion-header>
+
+</ion-header>
+
+<ion-content>
+  <div id="head">
+    <ion-grid>
+      <ion-row>
+
+        <ion-col size=3>
+
+          <button id="bouton" routerLink="/home" style="background-color: black;">
+            <img class="imageHome" src="../assets/iOS/homeLogo.png" width=60 />
+          </button>
+
+        </ion-col>
+
+        <ion-col size=6>
+          <img class="image" src="../assets/iOS/navbarbg.png" height=70 style="margin-left: auto;
+          margin-right: auto;
+          display: block;">
+        </ion-col>
+
+        <ion-col size=3>
+
+          <button id="bouton"  style="float: right;" style="background-color: black;
+          float: right;">
+            <img class="imageCart" src="../assets/iOS/cartLogo.png" width=60 />
+          </button>
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <h1>Choisissez vos produits</h1>
+
+
+  <ion-button routerLink="/vue5-x" (click)="affichage()">
+    <div id="text">
+      Poissons
+    </div>
+  </ion-button>
+
+  <ion-button routerLink="/vue51-coquillages">
+    <div id="text">
+      Coquillages
+    </div>
+  </ion-button>
+
+  <ion-button routerLink="/vue52-crustace">
+    <div id="text">
+      Crustacés
+    </div>
+  </ion-button>
+
+  <ion-button routerLink="/vue52-promo">
+    <div id="text">
+      Promotions
+    </div>
+  </ion-button>
+</ion-content>
+>>>>>>> b29be40f22f05cbb660d672aa529877abd37e2da
