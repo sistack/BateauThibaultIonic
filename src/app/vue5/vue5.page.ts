@@ -34,8 +34,9 @@ export class Vue5Page implements OnInit {
                       }]
   
   ngOnInit() {
-    this.getData();
+    //this.getData();
   }
+  /*
   getData() {
     this.http.get('assets/data/menu1.json').map(res => res.json()).subscribe(res => {
           this.data = res.menuItems;
@@ -44,7 +45,7 @@ export class Vue5Page implements OnInit {
         (err) => {
           alert('failed loading json data');
         });
-  }
+  }*/
 
   onLoadRecette(recette: {name: string, description : string[], image: string}){
     let navigationExtras : NavigationExtras = {
