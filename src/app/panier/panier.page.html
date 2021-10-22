@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>panier</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ <ion-grid>
+   <ion-col>
+     <ion-row *ngFor="let i of data" >{{i.name}}
+     <ion-button (click)="onLoadQuantity()">Quantite</ion-button></ion-row>
+   </ion-col>
+ </ion-grid>
+</ion-content>

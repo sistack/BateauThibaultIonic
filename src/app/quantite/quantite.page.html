@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>quantite</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-col>
+      <ion-row >
+       
+        <IonItem>
+          <IonLabel>Choisir Quantite</IonLabel>
+          <IonSelect value={toppings} multiple={true} cancelText="Nah" okText="Okay!" onIonChange={e =>
+            setQuantity(e.detail.value)}>
+            <IonSelectOption value="un">1</IonSelectOption>
+            <IonSelectOption value="deux">2</IonSelectOption>
+            <IonSelectOption value="trois">3</IonSelectOption>
+            <IonSelectOption value="quatre">4</IonSelectOption>
+            <IonSelectOption value="cinq">5</IonSelectOption>
+            
+          </IonSelect>
+        </IonItem>
+      </ion-row>
+    </ion-col>
+  </ion-grid>
+</ion-content>

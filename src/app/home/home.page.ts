@@ -27,7 +27,7 @@ export class HomePage {
   }
   //onGoTo Vue5 : Produits
   onGoToProduits(){
-    this.router.navigate(['/vue5Produits']);
+    this.router.navigate(['/vue5']);//produits
   }
 
 

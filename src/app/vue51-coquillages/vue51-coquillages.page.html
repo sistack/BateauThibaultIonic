@@ -1,0 +1,62 @@
+<ion-header>
+
+</ion-header>
+
+<ion-content>
+  <div id="head">
+    <ion-grid>
+      <ion-row>
+
+        <ion-col size=3>
+
+          <!--<img class="imageHome" src="../../assets/homeLogo.png">-->
+          <button id="bouton" routerLink="/home" style="background-color: black;">
+            <img class="imageHome" src="../assets/iOS/homeLogo.png" width=60 />
+          </button>
+
+        </ion-col>
+
+        <ion-col size=6>
+          <img class="image" src="../assets/iOS/navbarbg.png" height=70 style="margin-left: auto;
+          margin-right: auto;
+          display: block;">
+        </ion-col>
+
+        <ion-col size=3>
+          <!--<img class="imageCart" src="../../assets/cartLogo.png">-->
+          <button id="bouton" (click)="onLoadPanier()" style="float: right;" style="background-color: black;
+          float: right;">
+            <img class="imageCart" src="../assets/iOS/cartLogo.png" width=60 />
+          </button>
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <h1>Choisissez vos produits</h1>
+
+
+  <ion-grid>
+    <ion-row *ngFor="let i of liste">
+      <ion-col size="3">
+
+        <img src="../assets/iOS/poulpe.png" width=50 />
+      </ion-col>
+      <ion-col size="4" style="word-wrap: break-word;">
+        {{i.name}}
+      </ion-col>
+      <ion-col size="1">
+        {{i.price}} €
+      </ion-col>
+      <ion-col>
+        <ion-button (click)=add(i)> Ajouter au panier</ion-button>
+      </ion-col>
+
+    </ion-row>
+
+  </ion-grid>
+
+
+
+</ion-content>

@@ -22,7 +22,35 @@ const routes: Routes = [
   {
     path: 'vue4-x',
     loadChildren: () => import('./vue4-x/vue4-x.module').then( m => m.Vue4XPageModule)
+  },  {
+    path: 'vue5',
+    loadChildren: () => import('./vue5/vue5.module').then( m => m.Vue5PageModule)
   },
+  {
+    path: 'vue5-x',
+    loadChildren: () => import('./vue5-x/vue5-x.module').then( m => m.Vue5XPageModule)
+  },
+  {
+    path: 'vue51-coquillages',
+    loadChildren: () => import('./vue51-coquillages/vue51-coquillages.module').then( m => m.Vue51CoquillagesPageModule)
+  },
+  {
+    path: 'vue52-crustace',
+    loadChildren: () => import('./vue52-crustace/vue52-crustace.module').then( m => m.Vue52CrustacePageModule)
+  },
+  {
+    path: 'vue52-promo',
+    loadChildren: () => import('./vue52-promo/vue52-promo.module').then( m => m.Vue52PromoPageModule)
+  },
+  {
+    path: 'panier',
+    loadChildren: () => import('./panier/panier.module').then( m => m.PanierPageModule)
+  },
+  {
+    path: 'quantite',
+    loadChildren: () => import('./quantite/quantite.module').then( m => m.QuantitePageModule)
+  },
+
 ];
 
 @NgModule({
