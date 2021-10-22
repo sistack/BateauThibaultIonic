@@ -5,9 +5,10 @@
 </ion-header>
 
 <ion-content padding>
-  <div>
+  <ion-text>
     <button ion-item *ngFor="let bateau of bateauxList" (click)="onLoadBateau(bateau)" id="boatContainer">
       {{ bateau.name }}
+  
     </button>
-  </div>
+  </ion-text>
 </ion-content>

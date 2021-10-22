@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Nos restaurants</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="false">
+  
+  <div id="recette" class="ion-text-center">
+    <h3>Nos restaurants </h3>
+    <b>Tous les restaurants du bateau de Thibault.</b><br>
+    
+    06.63.99.99.78<br>
+    lebateaudethibault@gmail.com
+    www.facebook.com/lebateaudethibault 
+  </div>
+
+  <ion-grid>
+    <ion-row class="ion-padding-top">
+      <ion-col >
+          <ion-row>
+            <ion-col size-lg="6" size-md="6" size-sm="4" size="12">
+              <div >
+                <button id="recetteContainer" *ngFor="let recette of recettesList" (click)="onLoadRec(recette)">
+                        {{recette.name}}
+                        
+                </button>
+              </div>
+            </ion-col>
+          </ion-row>
+      </ion-col>
+    </ion-row>  
+  </ion-grid>
+   
+</ion-content>

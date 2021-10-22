@@ -13,7 +13,7 @@ export class HomePage {
 
   //Vue1 : Contact
   onGoToContact(){
-    this.router.navigate(['/vue1Contact']);
+    this.router.navigate(['/vue1']);
   }
   //Vue2 : Bateaux
   onGoToBateaux(){
@@ -21,7 +21,7 @@ export class HomePage {
   }
   //onGoTo Vue3 : Restaurants
   onGoToRestaurants(){
-    this.router.navigate(['/vue3Restaurants']);
+    this.router.navigate(['/vue3']);
   }
   //onGoTo Vue4 : Recettes
   onGoToRecettes(){
